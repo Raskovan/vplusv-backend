@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'first-shop.surge.sh'
+    origins '*'
 
     resource '*',
       headers: :any,
